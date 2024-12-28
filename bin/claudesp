@@ -1,0 +1,35 @@
+curl https://api.anthropic.com/v1/messages \
+    -H "content-type: application/json" \
+    -H "x-api-key: $ANTHROPIC_API_KEY" \
+    -H "anthropic-version: 2023-06-01" \
+    -s \
+    -d "{
+    \"model\": \"claude-3-5-sonnet-20241022\",
+    \"max_tokens\": 1024,
+    \"messages\": [{\"role\": \"user\", \"content\": \"$(cat $1)\"}],
+    \"tools\": [
+        {
+            \"name\": \"get_typo_replacements\",
+            \"description\": \"Get typo-replacement pairs for the text\",
+            \"input_schema\": {
+                \"type\": \"object\",
+                \"properties\": {
+                    \"pairs\": {
+                        \"type\": \"array\",
+                        \"items\": {
+                            \"type\": \"object\",
+                            \"properties\": {
+                                \"typo\": {\"type\": \"string\"},
+                                \"correction\": {\"type\": \"string\"}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    \"tool_choice\": {
+        \"type\": \"tool\",
+        \"name\": \"get_typo_replacements\"
+    }
+}" | jq -r '.content[0].input.pairs[] | "s/" + .typo + "/" + .correction + "/g"' | sed -i -f - $1

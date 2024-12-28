@@ -1,0 +1,278 @@
+mouseWheel:
+  closed: false
+  isStopped: false
+  hasError: false
+  thrownError: null
+  __isAsync: false
+elementDraw:
+  closed: false
+  currentObservers: null
+  isStopped: false
+  hasError: false
+  thrownError: null
+  __isAsync: false
+snapSettings:
+  constraints: 16
+serializationSettings:
+  preventDefaults: true
+contextMenuSettings:
+  show: true
+  items:
+    - text: Edit
+      id: edit
+      target: .e-elementcontent
+      iconCss: fa fa-cogs
+    - text: Callout To
+      id: callout
+      target: .e-elementcontent
+      iconCss: fa fa-crosshairs
+    - text: Increase font size ↑
+      id: increaseFontSize
+      target: .e-elementcontent
+      iconCss: fa fa-font
+    - text: Decrease font size ↓
+      id: decreaseFontSize
+      target: .e-elementcontent
+      iconCss: fa fa-font
+    - text: Bold
+      id: boldText
+      target: .e-elementcontent
+      iconCss: fa fa-bold
+    - text: Italicize
+      id: italicizeText
+      target: .e-elementcontent
+      iconCss: fa fa-italic
+    - text: Fill
+      id: fill
+      target: .e-elementcontent
+      iconCss: fa fa-tint
+    - text: Highlight
+      id: highlight
+      target: .e-elementcontent
+      iconCss: fa fa-lightbulb-o
+    - text: Collapse to square
+      id: collapseToSquare
+      target: .e-elementcontent
+      iconCss: fa fa-compress
+    - text: Collapse to named square
+      id: collapseToNamedSquare
+      target: .e-elementcontent
+      iconCss: fa fa-compress
+    - text: Collapse to circle
+      id: collapseToCircle
+      target: .e-elementcontent
+      iconCss: fa fa-compress
+    - text: Expand
+      id: expand
+      target: .e-elementcontent
+      iconCss: fa fa-expand
+    - text: Bring to front
+      id: front
+      target: .e-elementcontent
+      iconCss: fa fa-angle-double-up
+    - text: Bring forward
+      id: forward
+      target: .e-elementcontent
+      iconCss: fa fa-angle-up
+    - text: Send backward
+      id: backward
+      target: .e-elementcontent
+      iconCss: fa fa-angle-down
+    - text: Send to back
+      id: back
+      target: .e-elementcontent
+      iconCss: fa fa-angle-double-down
+    - text: Remove
+      id: remove
+      target: .e-elementcontent
+      iconCss: fa fa-times
+  showCustomMenuOnly: true
+tool: 5
+scrollSettings:
+  scrollLimit: Infinity
+  viewPortWidth: 930
+  viewPortHeight: 603
+  horizontalOffset: -80
+  verticalOffset: -4
+addInfo:
+  currencyText: USD ($)
+  currencySymbol: $
+  selectedViewType: 0
+height: 603
+nodes:
+  - shape:
+      type: HTML
+      content: '<div class="c-html" style="background-color: #181818;"><div
+        class="c-container"><div class="c-image-primary"
+        style="background-image:
+        url(https://static.softwaresim.com/logos/webp/Anthropic_Black_87_ehalpe.webp);"></div><div
+        class="c-image-original" style="background-image:
+        url(https://static.softwaresim.com/logos/webp/Anthropic_codit3.webp);"></div><div
+        class="c-text"><div class="c-title">Anthropic (Claude 3.5)</div><div
+        class="c-short-description">Developing general AI systems and large
+        language models</div><div class="c-bottom"><div class="c-hr
+        p-mb-1"></div><div
+        class="c-title-bottom">Anthropic</div></div></div></div></div>'
+    id: Anthropicns8TH
+    addInfo:
+      functionView:
+        leadTime: 0
+        leadTimeSeconds: 0
+        processTime: 0
+        processTimeSeconds: 0
+        completeAndAccuratePerc: 0
+        activityRatio: 0
+        viewType: metrics
+        name: Anthropic
+        shortDescription: Developing general AI systems and large language models
+      economicView:
+        cpus: 0
+        memory: 0
+        storage: 0
+        networking: 0
+        accelerators: 0
+        other: 0
+        unknown: false
+        totaling: false
+        total: 0
+        viewType: total
+        name: Anthropic
+      status: N/A
+      size: sm
+      nodeType: html
+      title: Anthropic
+      editableName: Anthropic (Claude 3.5)
+      type: component
+      id: ""
+      dynamicsViewSettings:
+        - name: Processing Tool
+          type: Processor
+          portsIn:
+            job: input
+          portsOut:
+            job: output
+          serviceTime:
+            exp:
+              lambda: AverageProcessingTime
+      dynamicsViews:
+        - type: Processor
+          status: Idle
+          name: Processing Tool
+          AverageProcessingTime: 1
+      name: Anthropic
+      category: 3
+      imgUrl: https://static.softwaresim.com/logos/webp/Anthropic_codit3.webp
+      imgPrimaryUrl: https://static.softwaresim.com/logos/webp/Anthropic__044448_nm4ttd.webp
+      imgBlackUrl: https://static.softwaresim.com/logos/webp/Anthropic_Black_87_ehalpe.webp
+      color: "#181818"
+      controlText: Anthropic
+      selectedDynamicsView: 0
+      latitude: null
+      longitude: null
+    width: 300
+    height: 100
+    offsetX: 318
+    offsetY: 225
+    zIndex: 0
+    inEdges:
+      - Orthogonal ConnectorwXvUi
+  - shape:
+      type: HTML
+      content: '<div class="c-html" style="background-color: #293137;"><div
+        class="c-container"><div class="c-image-primary"
+        style="background-image:
+        url(https://static.softwaresim.com/logos/webp/Bash_A_Black_87_v2_z9qskq.webp);"></div><div
+        class="c-image-original" style="background-image:
+        url(https://static.softwaresim.com/logos/webp/Bash_A_Black_87_yeo2zn.webp);"></div><div
+        class="c-text"><div class="c-title">Bash</div><div
+        class="c-short-description">Automating and executing commands on
+        Unix-based operating systems</div><div class="c-bottom"><div class="c-hr
+        p-mb-1"></div><div
+        class="c-title-bottom">Bash</div></div></div></div></div>'
+    id: BashusxXp
+    addInfo:
+      functionView:
+        leadTime: 0
+        leadTimeSeconds: 0
+        processTime: 0
+        processTimeSeconds: 0
+        completeAndAccuratePerc: 0
+        activityRatio: 0
+        viewType: metrics
+        name: Bash
+        shortDescription: Automating and executing commands on Unix-based operating systems
+      economicView:
+        cpus: 0
+        memory: 0
+        storage: 0
+        networking: 0
+        accelerators: 0
+        other: 0
+        unknown: false
+        totaling: false
+        total: 0
+        viewType: total
+        name: Bash
+      status: N/A
+      size: sm
+      nodeType: html
+      title: Bash
+      editableName: Bash
+      type: component
+      id: ""
+      dynamicsViewSettings:
+        - name: Automated Task
+          type: Processor
+          portsIn:
+            job: input
+          portsOut:
+            job: output
+          serviceTime:
+            exp:
+              lambda: AverageTaskDuration
+      dynamicsViews:
+        - type: Processor
+          status: Idle
+          name: Automated Task
+          AverageTaskDuration: 1
+      name: Bash
+      category: 8
+      imgUrl: https://static.softwaresim.com/logos/webp/Bash_A_Black_87_yeo2zn.webp
+      imgPrimaryUrl: https://static.softwaresim.com/logos/webp/Bash_A__044448_v2_gjbx6l.webp
+      imgBlackUrl: https://static.softwaresim.com/logos/webp/Bash_A_Black_87_v2_z9qskq.webp
+      controlText: Bash
+      color: "#293137"
+      selectedDynamicsView: 0
+      latitude: null
+      longitude: null
+    width: 300
+    height: 100
+    offsetX: 195
+    offsetY: 364
+    zIndex: 1
+    outEdges:
+      - Orthogonal ConnectorwXvUi
+connectors:
+  - id: Orthogonal ConnectorwXvUi
+    type: Orthogonal
+    targetDecorator:
+      shape: OpenArrow
+    style:
+      strokeWidth: 2
+    constraints: 470654
+    sourcePoint:
+      x: 195
+      y: 314
+    targetPoint:
+      x: 318
+      y: 275
+    sourceID: BashusxXp
+    targetID: Anthropicns8TH
+    segments:
+      - type: Orthogonal
+    addInfo:
+      viewConnector: 0
+    zIndex: 2
+selectedItems:
+  width: 0
+  height: 0
